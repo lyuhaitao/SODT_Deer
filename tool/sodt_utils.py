@@ -290,7 +290,7 @@ def getAPSmallMediumBig(model,testAnns, testImgs,root,areaRng,rng=[187,408]):
     ar_all_95_m = ret['all'][6]
     ar_all_95_b = ret['all'][7]
     
-    return {'AP_0.5_all':ap_all, 'AP_0.5_small':ap_s,'AP_0.5_medium':ap_m,'AP_0.5_large':ap_b,
+    return {'AP_0.5_all':ap_all, 'AP_0.5_small':ap_s,'AP_0.5_medium':ap_m,'AP_0.5_large':ap_b, 'AP_0.5:0.95_all':ap_all_95,
             'AP_0.5:0.95_small':ap_all_95_s,'AP_0.5:0.95_medium':ap_all_95_m,'AP_0.5:0.95_large':ap_all_95_b,
             'AR_0.5:0.95_small':ar_all_95_s,'AR_0.5:0.95_medium':ar_all_95_m,'AR_0.5:0.95_large':ar_all_95_b,
            }
